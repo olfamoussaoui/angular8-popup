@@ -1,0 +1,70 @@
+﻿app-modal {
+  display: none;
+}
+.backdrop {
+  position: fixed;
+  /* display: none; */
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+.modal {
+  position: fixed;
+  z-index: 200;
+  top: 20%;
+  left: 15%;
+  width: 70%;
+  background: white;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  height: 40%;
+  border-radius: 5px;
+  animation-name: open-modal;
+  animation-duration: 1s;
+  
+}
+.closeBtn {
+  color: #fff;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: .3em;
+}
+.closeBtn:hover, .closeBtn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-header {
+  background: #34495e;
+  padding: 5px 15px;
+  color: #fff;
+  border-radius: 5px 5px 0 0 ;
+}
+.modal-header h2 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 3em;
+}
+.modal-body {
+  padding: 10px 20px;
+  color: #333;
+}
+.modal-body p {
+  font-weight: 700;
+  font-size: 20px
+}
+.acceptBtn { 
+  border-radius: 5px;
+  padding: 5px 50px;
+}
+@keyframes open-modal {
+  from{
+      opacity: 0;
+  }
+  to{
+      opacity: 1;
+  }
+}
